@@ -1,0 +1,51 @@
+<DOCTYPE html>
+  <html lang="es">
+
+  <head>
+    <meta charset="utf-8" />
+    <title>Equipo</title>
+    <link rel="stylesheet" type="text/css" href="css/estilos.css">
+    <link rel="shortcut icon" href="favicon" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  </head>
+
+  <body>
+
+
+    <div class="col-md-4">
+      <table class="table table-striped table-hover table-bordered table-sm bg-white">
+        <thead>
+          <tr>
+            <td>Listado De Partidos</td>
+          </tr>
+        </thead>
+        <tbody>
+
+
+
+          {% for data in datos %}
+
+          <tr>
+            <td>
+              <b>Fecha {{loop.index}} para los partidos</b>
+            </td>
+          </tr>
+
+            {% for a in data %}
+            <tr>
+              <td>{{a}}</td>
+            </tr>
+            {% endfor %}
+
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+
+
+  </body>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
+
+  </html>
